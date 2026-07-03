@@ -1,11 +1,5 @@
 # Optimizing Stock Trading Strategy with Reinforcement Learning
 
-A complete implementation of the Stanford CS229 project:
-
-> Optimizing Stock Trading Strategy with Reinforcement Learning
-
-This project reproduces and extends the paper by implementing reinforcement learning algorithms for stock trading from scratch.
-
 ---
 
 ## Project Objective
