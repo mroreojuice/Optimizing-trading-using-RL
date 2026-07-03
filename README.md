@@ -1,10 +1,69 @@
-# Optimizing Stock Trading Strategy using Reinforcement Learning
+# Optimizing Stock Trading Strategy with Reinforcement Learning
 
 A complete implementation of the Stanford CS229 project:
 
-> Optimizing Stock Trading Strategy With Reinforcement Learning
+> Optimizing Stock Trading Strategy with Reinforcement Learning
 
-This repository implements three reinforcement learning algorithms for trading SPY.
+This project reproduces and extends the paper by implementing reinforcement learning algorithms for stock trading from scratch.
+
+---
+
+## Project Objective
+
+The objective is to maximize cumulative portfolio wealth while trading the SPY ETF using reinforcement learning.
+
+We compare:
+
+- Buy & Hold
+- MACD Strategy
+- Tabular Q-Learning
+- Hill Climbing
+- Deep Q-Network (DQN)
+
+---
+
+## Dataset
+
+- Source: Yahoo Finance
+- Ticker: SPY
+- Training Period: January 2010 – December 2015
+- Testing Period: January 2016 – December 2020
+
+---
+
+## Technologies
+
+- Python
+- NumPy
+- Pandas
+- Matplotlib
+- PyTorch
+- yfinance
+
+No reinforcement learning libraries (Gym, Stable Baselines, RLlib, etc.) are used.
+
+---
+
+## Repository Structure
+
+```
+RL-Stock-Trading/
+
+README.md
+requirements.txt
+.gitignore
+
+notebooks/
+    Stock_Trading_RL.ipynb
+
+src/
+
+figures/
+
+data/
+```
+
+---
 
 ## Algorithms
 
@@ -12,56 +71,41 @@ This repository implements three reinforcement learning algorithms for trading S
 - MACD
 - Tabular Q-Learning
 - Hill Climbing
-- Deep Q Network (DQN)
+- Deep Q-Network
 
-## Dataset
+---
 
-Yahoo Finance SPY ETF
+## Results
 
-Training:
-2010-01-04 to 2015-12-31
+The notebook generates:
 
-Testing:
-2016-01-04 to 2020-12-30
+- Stock price visualization
+- Technical indicators
+- Portfolio value curves
+- Reward curves
+- DQN loss curve
+- Final comparison plots
 
-## Libraries
+---
 
-- NumPy
-- Pandas
-- Matplotlib
-- PyTorch
-- yfinance
+## How to Run
 
-No RL libraries such as Stable Baselines or Gym are used.
+Install the dependencies:
 
-## Folder Structure
-
-```
-RL-Stock-Trading/
-
-src/
-    data_loader.py
-    indicators.py
-    environment.py
-    baselines.py
-    qlearning.py
-    hill_climbing.py
-    replay_buffer.py
-    models.py
-    dqn.py
-    trainer.py
-    evaluate.py
-
-figures/
-
-notebooks/
-
-README.md
-requirements.txt
-```
-
-Run the notebook after installing the dependencies.
-
-```
+```bash
 pip install -r requirements.txt
 ```
+
+Open:
+
+```
+notebooks/Stock_Trading_RL.ipynb
+```
+
+Run all cells from top to bottom.
+
+---
+
+## License
+
+MIT License
